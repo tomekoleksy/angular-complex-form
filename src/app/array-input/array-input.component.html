@@ -1,0 +1,8 @@
+<div [formGroup]="control">
+  <div formArrayName="someArray">
+    <div *ngFor="let entry of formArray.controls; index as i">
+      <app-array-entry (onRemove)="onEntryRemoved($event)" [formGroup]="entry" [index]="i"></app-array-entry>
+    </div>
+  </div>
+  <button (click)="addEntry()">addEntry</button>
+</div>

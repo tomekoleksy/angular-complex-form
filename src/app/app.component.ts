@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {FormGroup} from '@angular/forms';
+import {AppModelService} from './app-model.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'form-angular';
+  model: FormGroup;
+  submit = () => {
+    console.log(JSON.stringify(this.model.value));
+  };
+
+  constructor(private appModelService: AppModelService) {
+    this.model = appModelService.createModel();
+  }
 }
