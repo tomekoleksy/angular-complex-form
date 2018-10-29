@@ -16,8 +16,7 @@ import { OtherSimpleInputComponent } from './other-simple-input/other-simple-inp
     ComplexInputComponent,
     SimpleInputComponent,
     ArrayInputComponent,
-    ArrayEntryComponent,
-    OtherSimpleInputComponent
+    ArrayEntryComponent
   ],
   imports: [
     ReactiveFormsModule,
