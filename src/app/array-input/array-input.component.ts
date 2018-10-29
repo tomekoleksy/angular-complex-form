@@ -16,7 +16,7 @@ export class ArrayInputComponent extends FormControlAware<FormArray> {
   }
 
   get formArray(): FormArray {
-    return <FormArray>this.control.get('someArray');
+    return <FormArray>this.formGroup.get('someArray');
   }
 
   addEntry() {

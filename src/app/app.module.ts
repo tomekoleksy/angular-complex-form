@@ -8,6 +8,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {SimpleInputComponent} from './simple-input/simple-input.component';
 import {ArrayInputComponent} from './array-input/array-input.component';
 import {ArrayEntryComponent} from './array-entry/array-entry.component';
+import { OtherSimpleInputComponent } from './other-simple-input/other-simple-input.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {ArrayEntryComponent} from './array-entry/array-entry.component';
     ComplexInputComponent,
     SimpleInputComponent,
     ArrayInputComponent,
-    ArrayEntryComponent
+    ArrayEntryComponent,
+    OtherSimpleInputComponent
   ],
   imports: [
     ReactiveFormsModule,

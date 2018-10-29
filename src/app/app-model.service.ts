@@ -17,7 +17,7 @@ export class AppModelService {
         personalDetails: this.formBuilder.group({
           name: ['', Validators.required],
           title: [''],
-          other: ['']
+          other: ['asdasd', Validators.required]
         }),
         someArray: this.formBuilder.array([])
       });

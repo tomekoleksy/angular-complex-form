@@ -1,6 +1,5 @@
-<div [formGroup]="control">
-
+<div [formGroup]="formGroup">
   <input formControlName="name" placeholder="name">
   <input formControlName="title" placeholder="title">
-  <app-simple-input [formGroup]="control"></app-simple-input>
+  <app-simple-input formControlName="other"></app-simple-input>
 </div>
